@@ -10,9 +10,6 @@ public class Boj13866 {
         for(int i = 0; i < 4; i++)
             x[i] = sc.nextInt();
 
-        int value1 = Math.min(x[0], x[1]) + Math.max(x[2], x[3]);
-        int value2 = Math.max(x[0], x[1]) + Math.min(x[2], x[3]);
-
-        System.out.println(value1 - value2);
+        System.out.println(Math.abs((x[0] + x[3]) - (x[1] + x[2])));
     }
 }
