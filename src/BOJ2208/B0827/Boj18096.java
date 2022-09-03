@@ -8,6 +8,6 @@ public class Boj18096 {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         bf.readLine();
-        System.out.println(1);
+        System.out.println(1 + 0);
     }
 }
