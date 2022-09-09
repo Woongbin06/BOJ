@@ -14,7 +14,12 @@ public class Boj2460 {
         for(int i = 0; i < 7; i++)
             x[i] = Integer.parseInt(bf.readLine());
 
-        min = x[0];
+        if(x[0] % 2 == 1) {
+            min = x[0];
+            sum += x[0];
+        }
+        else
+            min = 100;
 
         for(int i = 1;i < 7; i++){
             if(x[i] % 2 == 1) {
