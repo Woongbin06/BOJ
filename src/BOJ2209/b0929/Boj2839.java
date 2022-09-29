@@ -1,3 +1,5 @@
+package BOJ2209.b0929;
+
 import java.util.Scanner;
 
 public class Boj2839 {
@@ -11,14 +13,15 @@ public class Boj2839 {
             System.out.println("-1");
             return;
         }
-
         cnt += x / 5;
         for(int i = 0; i < cnt; i++)
             x -= 5;
+
         cnt += x / 3;
         int value = x / 3;
         for(int i = 0; i < value; i++)
             x -= 3;
+
         if(cnt == 0)
             System.out.println("-1");
         else if(x != 0)
